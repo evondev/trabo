@@ -1,0 +1,173 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #354657;
+  line-height: 1;
+}
+
+.button {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  outline: none;
+  background-color: transparent;
+  border: 0;
+  border-radius: 10px;
+  line-height: 1;
+}
+.button--primary {
+  color: white;
+  background-color: #6347f9;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navigation {
+  padding: 24px 0;
+}
+.navigation-container {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.menu-link {
+  color: #354657;
+  font-weight: 500;
+  transition: all 0.2s linear;
+  position: relative;
+}
+.menu-link:hover {
+  color: #23364a;
+}
+.menu-link:hover:before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.contact-us {
+  margin-left: 44px;
+  padding: 18px 38px;
+  box-shadow: 0px 6px 25px rgba(73, 52, 188, 0.26);
+}
+
+.toggle {
+  display: none;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-item + .menu-item {
+    margin-left: 40px;
+  }
+
+  .menu-link:before {
+    content: "";
+    width: 8px;
+    height: 2px;
+    background-color: #6347f9;
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+  }
+}
+@media screen and (max-width: 767px) {
+  .toggle {
+    display: block;
+  }
+
+  .menu {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: 10;
+    width: 100%;
+    max-width: 300px;
+    flex-direction: column;
+    align-items: stretch;
+    transform: translate(100%, 0);
+    transition: all 0.2s linear;
+  }
+  .menu-item {
+    margin-bottom: 10px;
+  }
+  .menu-link {
+    padding: 15px;
+    display: block;
+    width: 100%;
+  }
+
+  .contact-us {
+    margin-left: auto;
+    margin-right: 20px;
+    padding: 15px 30px;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */

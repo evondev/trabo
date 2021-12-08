@@ -1,0 +1,14 @@
+.button {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  outline: none;
+  background-color: transparent;
+  border: 0;
+  border-radius: 10px;
+  line-height: 1;
+  &--primary {
+    color: white;
+    background-color: $purple;
+  }
+}
